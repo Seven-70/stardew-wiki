@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>建造与农场 · 星露谷百科</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body data-page="build" data-root="../">
+
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="../index.html"><span class="mark">SD</span><span><span class="bt">星露谷百科</span><br /><span class="bs">STARDEW VALLEY</span></span></a>
+    <span class="ver">版本 1.6</span>
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="搜索：鸡舍、畜棚、房屋升级、鱼塘…" autocomplete="off" />
+      <button id="clear" type="button" aria-label="清空">×</button>
+    </div>
+    <span class="hit">条目 <b id="hit">0</b></span>
+    <button class="menu-btn" id="menubtn" aria-label="目录">≡</button>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="side">
+    <div class="side-block"><div class="side-title">百科目录</div><nav class="navlist" id="sitenav"></nav></div>
+    <div class="side-block"><div class="side-title">本页</div><nav id="toc"></nav></div>
+  </aside>
+
+  <main>
+    <header class="phead">
+      <div class="crumb"><a href="../index.html">百科</a><span>/</span>建造与农场</div>
+      <div class="pnum">CHAPTER 07</div>
+      <h1>建造与农场</h1>
+      <p class="desc">罗宾能造什么、多少钱、先造哪个；房屋升级、工具强化与动物养殖。</p>
+      <div class="facts">
+        <span class="fact">建筑 <b>15+</b></span>
+        <span class="fact">房屋 <b>3 次升级</b></span>
+        <span class="fact">工具 <b>4 档</b></span>
+        <span class="fact">最高畜棚 <b>12 只</b></span>
+      </div>
+    </header>
+
+    <section class="blk">
+      <h2 id="robin">罗宾的建筑清单</h2>
+      <p>所有建筑都在山上的木匠店找罗宾建造，占用农场空地，施工期间不能使用该位置。价格与材料如下（1.6 版）。</p>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>建筑</th><th class="n">费用</th><th>材料</th><th>用途</th></tr></thead>
+        <tbody>
+          <tr data-s="鸡舍 coop 4000 300木材"><td><b>鸡舍</b></td><td class="n">4000g</td><td>300 木材</td><td>养 4 只鸡/鸭，基础产蛋</td></tr>
+          <tr data-s="大鸡舍 big coop 10000"><td><b>大鸡舍</b></td><td class="n">10000g</td><td>400 木材 + 150 石头</td><td>容量 8，解锁孵化器</td></tr>
+          <tr data-s="高级鸡舍 deluxe coop 20000"><td><b>高级鸡舍</b></td><td class="n">20000g</td><td>500 木材 + 200 石头</td><td>容量 12，自动喂食</td></tr>
+          <tr data-s="畜棚 barn 6000 350木材"><td><b>畜棚</b></td><td class="n">6000g</td><td>350 木材</td><td>养 4 头牛/羊，产奶</td></tr>
+          <tr data-s="大畜棚 big barn 12000"><td><b>大畜棚</b></td><td class="n">12000g</td><td>450 木材 + 200 石头</td><td>容量 8，解锁怀孕</td></tr>
+          <tr data-s="高级畜棚 deluxe barn 25000"><td><b>高级畜棚</b></td><td class="n">25000g</td><td>550 木材 + 300 石头</td><td>容量 12，自动喂食</td></tr>
+          <tr data-s="筒仓 silo 干草"><td><b>筒仓</b></td><td class="n">100g</td><td>100 石头 + 10 黏土 + 5 铜锭</td><td>割草自动储干草，喂动物</td></tr>
+          <tr data-s="小屋 shed 15000 工匠"><td><b>小屋</b></td><td class="n">15000g</td><td>300 木材</td><td>室内放小桶/罐头瓶，格子多</td></tr>
+          <tr data-s="大屋子 big shed 20000"><td><b>大屋子</b></td><td class="n">20000g</td><td>550 木材</td><td>小屋升级版，空间更大</td></tr>
+          <tr data-s="马厩 stable 10000 硬木"><td><b>马厩</b></td><td class="n">10000g</td><td>100 硬木 + 5 铁锭</td><td>获得马，移动速度大幅提升</td></tr>
+          <tr data-s="鱼塘 fish pond 5000"><td><b>鱼塘</b></td><td class="n">5000g</td><td>200 石头 + 5 海藻 + 5 绿藻</td><td>养鱼产鱼籽，可做鱼籽酱</td></tr>
+          <tr data-s="史莱姆屋 slime hutch 10000"><td><b>史莱姆屋</b></td><td class="n">10000g</td><td>500 石头 + 10 精炼石英</td><td>养史莱姆，产史莱姆球</td></tr>
+          <tr data-s="水井 well 1000"><td><b>水井</b></td><td class="n">1000g</td><td>75 石头</td><td>就近补水壶，装饰用</td></tr>
+          <tr data-s="磨坊 mill 面粉"><td><b>磨坊</b></td><td class="n">2500g</td><td>50 石头 + 4 布料</td><td>小麦磨面粉、甜菜磨糖</td></tr>
+          <tr data-s="祝尼魔小屋 junimo hut 20000 星之果实"><td><b>祝尼魔小屋</b></td><td class="n">20000g</td><td>9 星之果实</td><td>完成社区中心后找法师，祝尼魔自动收割</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout tip">
+        <span class="ct">建造优先级</span>
+        <p>第一年：鸡舍 → 筒仓 → 小屋 → 马厩 → 畜棚。筒仓一定要早于/同时于鸡舍，否则每天手动割草喂食很浪费时间。马厩带来的移动提速是全游戏性价比最高的建筑之一。</p>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="house">房屋升级</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>阶段</th><th class="n">费用</th><th>材料</th><th>解锁</th></tr></thead>
+        <tbody>
+          <tr data-s="第一次升级 厨房 10000"><td><b>第一次升级</b></td><td class="n">10000g</td><td>450 木材</td><td>厨房（可做料理）、双人床、冰箱</td></tr>
+          <tr data-s="第二次升级 儿童房 50000"><td><b>第二次升级</b></td><td class="n">50000g</td><td>150 硬木</td><td>儿童房、额外房间、可生育</td></tr>
+          <tr data-s="第三次升级 地窖 100000"><td><b>第三次升级</b></td><td class="n">100000g</td><td>—</td><td>地窖，可放木桶陈酿</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>厨房是料理系统的入口，越早升级越好；地窖里的木桶能把酒与奶酪陈酿成更高品质，是后期高价值工匠品的必备。1.6 还新增了餐厅、阁楼、扩展角房、小隔间四种改造，可在罗宾处付费调整。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="tool">工具强化</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>等级</th><th class="n">费用</th><th>材料</th><th>效果</th></tr></thead>
+        <tbody>
+          <tr data-s="铜 工具 2000"><td><b>铜</b></td><td class="n">2000g</td><td>5 铜锭</td><td>可蓄力，一次处理 3 格</td></tr>
+          <tr data-s="铁 工具 5000"><td><b>铁</b></td><td class="n">5000g</td><td>5 铁锭</td><td>一次处理 5 格</td></tr>
+          <tr data-s="金 工具 10000"><td><b>金</b></td><td class="n">10000g</td><td>5 金锭</td><td>一次处理更多格，效率再提升</td></tr>
+          <tr data-s="铱 工具 25000"><td><b>铱</b></td><td class="n">25000g</td><td>5 铱锭</td><td>最大范围，最高效率</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>锄头、水壶、斧头、镐子都能升级，每次需要 <b>2 天</b>（期间不可用，记得看天气）。优先级：<b>水壶 &gt; 锄头 &gt; 镐子 &gt; 斧头</b>。水壶升级后一次浇一大片，是春季最省体力的投资。</p>
+      <div class="callout warn">
+        <span class="ct">别在雨天送修水壶</span>
+        <p>雨天不用浇水，正是送修水壶的好时机；反过来，晴天把水壶送去升级，第二天作物就会渴一天。</p>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="animal">动物养殖</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>动物</th><th class="n">价格</th><th>建筑</th><th>产物</th></tr></thead>
+        <tbody>
+          <tr data-s="鸡 chicken 800 蛋"><td><b>鸡</b></td><td class="n">800g</td><td>鸡舍</td><td>鸡蛋、大鸡蛋</td></tr>
+          <tr data-s="鸭 duck 1200 鸭蛋"><td><b>鸭</b></td><td class="n">1200g</td><td>大鸡舍</td><td>鸭蛋、鸭毛</td></tr>
+          <tr data-s="兔子 rabbit 8000 兔脚"><td><b>兔子</b></td><td class="n">8000g</td><td>高级鸡舍</td><td>兔毛、兔脚（稀有）</td></tr>
+          <tr data-s="牛 cow 1500 牛奶"><td><b>牛</b></td><td class="n">1500g</td><td>畜棚</td><td>牛奶、大壶牛奶</td></tr>
+          <tr data-s="山羊 goat 4000 羊奶"><td><b>山羊</b></td><td class="n">4000g</td><td>大畜棚</td><td>羊奶、大壶羊奶</td></tr>
+          <tr data-s="绵羊 sheep 8000 羊毛"><td><b>绵羊</b></td><td class="n">8000g</td><td>大畜棚</td><td>羊毛</td></tr>
+          <tr data-s="猪 pig 16000 松露"><td><b>猪</b></td><td class="n">16000g</td><td>高级畜棚</td><td>松露（需放养）</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <h3>每天要做的三件事</h3>
+      <ul>
+        <li><b>抚摸</b>每只动物一次，提升好感与产物品质；1.6 有自动抚摸机可省这一步。</li>
+        <li><b>收产物</b>鸡舍收蛋、畜棚挤奶剪毛；猪要放到户外才拱松露。</li>
+        <li><b>补干草</b>筒仓有草就自动喂；冬天没有草，必须提前囤干草。</li>
+      </ul>
+      <p>动物好感越高，产出大尺寸产品的概率越高。大鸡蛋、大壶牛奶是献祭与高价料理的关键材料，别急着全卖掉。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="layout">农场布局建议</h2>
+      <div class="grid g2">
+        <div class="card" data-s="分区 种植区 畜牧区 工匠区">
+          <h4>四区划分</h4>
+          <p>种植区靠近农舍与水；畜牧区放边缘留草地；工匠区集中小桶与箱子；果树沿路排开，方便每天顺手收。</p>
+        </div>
+        <div class="card" data-s="洒水器 稻草人 避雷针">
+          <h4>三件套</h4>
+          <p>洒水器定网格，稻草人每 16×16 一个，避雷针放田边收电池。先把网格定死，再填作物。</p>
+        </div>
+        <div class="card" data-s="小路 铺地 速度">
+          <h4>铺路提速</h4>
+          <p>主路铺地板，走位更顺且不会长杂草；农舍到鸡舍、到田、到出货箱三条路优先铺。</p>
+        </div>
+        <div class="card" data-s="箱子 仓库 分类">
+          <h4>仓库分类</h4>
+          <p>按「种子/矿石/食材/献祭/杂项」分箱并贴告示牌，后期找东西的时间会省下非常多。</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pfoot">
+      <a href="村民与好感.html"><span class="dir">上一章</span><span class="tt">06 · 村民与好感</span></a>
+      <a class="next" href="烹饪与制作.html"><span class="dir">下一章</span><span class="tt">08 · 烹饪与制作</span></a>
+    </footer>
+    <div class="sitefoot">建造价格与材料以 1.6 版罗宾菜单为准；部分建筑在版本更新中有过调整。</div>
+  </main>
+</div>
+
+<button id="top" aria-label="返回顶部">↑</button>
+<script src="../assets/app.js"></script>
+</body>
+</html>

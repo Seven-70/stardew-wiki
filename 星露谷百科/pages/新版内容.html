@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>1.6 新内容 · 星露谷百科</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body data-page="v16" data-root="../">
+
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="../index.html"><span class="mark">SD</span><span><span class="bt">星露谷百科</span><br /><span class="bs">STARDEW VALLEY</span></span></a>
+    <span class="ver">版本 1.6</span>
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="搜索：精通、书籍、浣熊、饰品、谜之盒…" autocomplete="off" />
+      <button id="clear" type="button" aria-label="清空">×</button>
+    </div>
+    <span class="hit">条目 <b id="hit">0</b></span>
+    <button class="menu-btn" id="menubtn" aria-label="目录">≡</button>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="side">
+    <div class="side-block"><div class="side-title">百科目录</div><nav class="navlist" id="sitenav"></nav></div>
+    <div class="side-block"><div class="side-title">本页</div><nav id="toc"></nav></div>
+  </aside>
+
+  <main>
+    <header class="phead">
+      <div class="crumb"><a href="../index.html">百科</a><span>/</span>1.6 新内容</div>
+      <div class="pnum">CHAPTER 11</div>
+      <h1>1.6 新内容</h1>
+      <p class="desc">精通系统、力量之书、大树桩与浣熊、新作物与机器、谜之盒与饰品——一次讲清 1.6 的全部主线。</p>
+      <div class="facts">
+        <span class="fact">精通分支 <b>5 个</b></span>
+        <span class="fact">力量之书 <b>19 本</b></span>
+        <span class="fact">新作物 <b>4 种</b></span>
+        <span class="fact">饰品 <b>7 种</b></span>
+      </div>
+    </header>
+
+    <section class="blk">
+      <h2 id="overview">1.6 改了什么</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>系统</th><th>关键词</th><th>价值</th></tr></thead>
+        <tbody>
+          <tr data-s="农场 草原农场 蓝草"><td>农场</td><td>草原农场、蓝草、初始鸡舍</td><td>畜牧开局的第二条路线</td></tr>
+          <tr data-s="精通 mastery 山洞"><td>成长</td><td>精通山洞、五大分支、精通点</td><td>五项技能满级后继续变强</td></tr>
+          <tr data-s="书籍 书商 books"><td>知识</td><td>19 本力量之书、5 本技能书、书商</td><td>永久增益与定向经验</td></tr>
+          <tr data-s="脱水机 熏鱼机 重型熔炉 蘑菇原木"><td>生产</td><td>脱水机、熏鱼机、重型熔炉、蘑菇原木</td><td>新的加工链与更高收益</td></tr>
+          <tr data-s="大树桩 浣熊 谜之盒 绿雨"><td>世界</td><td>大树桩、浣熊、谜之盒、绿雨</td><td>探索与采集的额外回报</td></tr>
+          <tr data-s="沙漠节 鳟鱼大赛 鱿鱼节"><td>节日</td><td>沙漠节、鳟鱼大赛、鱿鱼节</td><td>活动密度提升</td></tr>
+          <tr data-s="饰品 铁砧 困难矿井"><td>战斗</td><td>饰品、铁砧、困难矿井</td><td>战斗流派与刷矿体验重做</td></tr>
+          <tr data-s="宠物 房屋改造 家具"><td>生活</td><td>多宠物、房屋改造、家具</td><td>装修与陪伴向内容</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="mastery">精通系统</h2>
+      <p>五项技能（耕种、采矿、采集、钓鱼、战斗）<b>全部 10 级</b>后，煤矿森林的「精通山洞」开启。满级后继续获得的经验会转化为精通点，用来点亮五个分支。</p>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>精通等级</th><th class="n">本级需求</th><th class="n">累计</th></tr></thead>
+        <tbody>
+          <tr data-s="精通 1 级 10000"><td>1 级</td><td class="n">10,000</td><td class="n">10,000</td></tr>
+          <tr data-s="精通 2 级 15000"><td>2 级</td><td class="n">15,000</td><td class="n">25,000</td></tr>
+          <tr data-s="精通 3 级 20000"><td>3 级</td><td class="n">20,000</td><td class="n">45,000</td></tr>
+          <tr data-s="精通 4 级 25000"><td>4 级</td><td class="n">25,000</td><td class="n">70,000</td></tr>
+          <tr data-s="精通 5 级 30000"><td>5 级</td><td class="n">30,000</td><td class="n">100,000</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>经验转化：采矿、采集、钓鱼、战斗按 <b>100%</b> 转化，耕种只按 <b>50%</b> 转化。老存档满级后溢出的经验不会追溯补发，必须从 1.6 起重新积累。</p>
+      <h3>五个分支</h3>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>分支</th><th>解锁内容</th><th>评价</th></tr></thead>
+        <tbody>
+          <tr data-s="耕种精通 铱镰刀 祝福雕像"><td><b>耕种</b></td><td>铱镰刀、祝福雕像、金色动物饼干</td><td>铱镰刀大幅节省收获时间</td></tr>
+          <tr data-s="采矿精通 矮人王雕像 重型熔炉"><td><b>采矿</b></td><td>矮人王雕像、重型熔炉、宝石双倍</td><td>刷矿流核心</td></tr>
+          <tr data-s="采集精通 神秘树 宝藏图腾"><td><b>采集</b></td><td>神秘树种子、宝藏图腾、金色谜之盒</td><td>滚雪球最快</td></tr>
+          <tr data-s="钓鱼精通 高级铱鱼竿 挑战鱼饵"><td><b>钓鱼</b></td><td>高级铱鱼竿、挑战鱼饵、金色宝箱</td><td>钓鱼收益上限提升</td></tr>
+          <tr data-s="战斗精通 铁砧 饰品栏"><td><b>战斗</b></td><td>铁砧、迷你锻造台、饰品栏</td><td class="g">推荐最优先</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout tip">
+        <span class="ct">推荐顺序</span>
+        <p>战斗 → 采集 → 耕种 → 采矿 → 钓鱼。战斗精通立刻解锁饰品栏，下矿与刷怪效率质变；采集精通带来神秘树与金色谜之盒，滚雪球最快。</p>
+      </div>
+      <h3>精通造物</h3>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>物品</th><th>配方 / 解锁</th><th>作用</th></tr></thead>
+        <tbody>
+          <tr data-s="祝福雕像 999树液 苔藓"><td>祝福雕像</td><td>999 树液 + 999 纤维 + 999 石头 + 333 苔藓</td><td>每天随机获得一种祝福</td></tr>
+          <tr data-s="矮人王雕像 20铱锭"><td>矮人王雕像</td><td>20 铱锭</td><td>每天五选二采矿增益</td></tr>
+          <tr data-s="重型熔炉 25矿石"><td>重型熔炉</td><td>2 熔炉 + 3 铁锭 + 50 石头</td><td>25 矿石 + 3 煤 → 5–6 锭</td></tr>
+          <tr data-s="神秘树种子"><td>神秘树种子</td><td>5 橡实 + 5 枫种 + 5 松果 + 5 桃花心木种</td><td>种出可挂采集器的神秘树</td></tr>
+          <tr data-s="宝藏图腾"><td>宝藏图腾</td><td>5 硬木 + 1 神秘糖浆 + 10 苔藓</td><td>脚下生成一圈可挖点</td></tr>
+          <tr data-s="挑战鱼饵 5骨片"><td>挑战鱼饵</td><td>5 骨片 + 2 苔藓 → 5 个</td><td>一次最多上 3 条鱼</td></tr>
+          <tr data-s="铁砧 3铱锭"><td>铁砧</td><td>50 铁锭</td><td>花 3 铱锭重铸饰品</td></tr>
+          <tr data-s="迷你锻造台 龙牙"><td>迷你锻造台</td><td>5 龙牙 + 10 铁锭 + 10 金锭 + 5 铱锭</td><td>在家完成火山锻造</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="book">书籍系统</h2>
+      <p>1.6 新增 19 本力量之书、5 本技能书与《星星之书》。读书不再是装饰，而是永久增益。</p>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>书名</th><th>效果</th><th>获取</th></tr></thead>
+        <tbody>
+          <tr data-s="价格目录"><td>价格目录</td><td>查看物品售价</td><td>书商 3000g</td></tr>
+          <tr data-s="洞穴系统地图 找回"><td>洞穴系统地图</td><td>马龙找回物品费用减半</td><td>击杀 1000 只怪物后的箱子</td></tr>
+          <tr data-s="风之道 上 下 速度"><td>风之道·上 / 下</td><td>移动速度提升（下册需先读上册）</td><td>书商 15000g / 35000g</td></tr>
+          <tr data-s="怪物图鉴 双倍掉落"><td>怪物图鉴</td><td>怪物小概率双倍掉落</td><td>怪物掉落</td></tr>
+          <tr data-s="友谊入门 好感"><td>友谊入门</td><td>好感增长加快</td><td>兑奖机</td></tr>
+          <tr data-s="灵巧与厚实 防御"><td>灵巧与厚实</td><td>防御 +1</td><td>神器点</td></tr>
+          <tr data-s="伍迪的秘密 木材"><td>伍迪的秘密</td><td>砍树 5% 概率双倍木材</td><td>砍树掉落</td></tr>
+          <tr data-s="浣熊日志 混合种子"><td>浣熊日志</td><td>杂草更易产出混合种子</td><td>第二次浣熊请求 / 999 纤维</td></tr>
+          <tr data-s="海洋珠宝 鱼籽"><td>海洋珠宝</td><td>钓鱼宝箱可能开出鱼籽</td><td>钓鱼宝箱</td></tr>
+          <tr data-s="矮人安全手册 炸弹"><td>矮人安全手册</td><td>炸弹自伤 -25%</td><td>矮人 4000g</td></tr>
+          <tr data-s="捕蟹的艺术 蟹笼"><td>捕蟹的艺术</td><td>蟹笼 25% 概率双倍产出</td><td>鱿鱼节铱级奖励</td></tr>
+          <tr data-s="小巷自助餐 垃圾桶"><td>小巷自助餐</td><td>翻垃圾桶更易获得物品</td><td>铁匠与 JojaMart 之间的金色垃圾桶</td></tr>
+          <tr data-s="钻石猎人 钻石"><td>钻石猎人</td><td>挖石头小概率掉钻石</td><td>火山矮人处 10 钻石兑换</td></tr>
+          <tr data-s="神秘之书 谜之盒"><td>神秘之书</td><td>略微提高谜之盒掉落</td><td>谜之盒 / 金色谜之盒</td></tr>
+          <tr data-s="马之书 骑马"><td>马之书</td><td>骑马速度提升</td><td>书商 25000g</td></tr>
+          <tr data-s="宝物鉴定指南 古物"><td>宝物鉴定指南</td><td>古物售价提高</td><td>神器盒</td></tr>
+          <tr data-s="老滑腿 草地 加速"><td>老滑腿</td><td>在草地与作物中大幅加速</td><td>书商 25000g</td></tr>
+          <tr data-s="动物目录 玛妮"><td>动物目录</td><td>玛妮不在时也能买动物</td><td>玛妮 5000g（第 2 年起）</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <h3>技能书与星星之书</h3>
+      <ul>
+        <li><b>星露谷年鉴 / 诱饵与浮标 / 采矿月刊 / 战斗季刊 / 伐木周刊</b>：各给对应技能 250 经验。</li>
+        <li><b>星星之书</b>：全技能 250 经验，精通后转化为 1125 精通点，书商有 25% 概率以 15000g 出售。</li>
+        <li>书商每季随机到访两天，日历上有气球标记；卖固定书目、随机书目，第 3 年起还会随机上架力量之书。</li>
+      </ul>
+    </section>
+
+    <section class="blk">
+      <h2 id="raccoon">大树桩与浣熊</h2>
+      <ol class="steps">
+        <li>触发大风事件后，煤矿森林的大树桩出现问号提示。</li>
+        <li>准备 <b>100 个硬木</b>修复树桩，浣熊一家入住，开启「大树桩」任务线。</li>
+        <li>首个请求通常是 5 个蟹笼鱼 + 1 个熏鱼，完成后获得 <b>25 个当季新作物种子</b>，并解锁浣熊商店。</li>
+        <li>后续请求持续升级奖励，可获得《星星之书》《浣熊日志》等稀有物品。</li>
+      </ol>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>商品</th><th>所需材料</th></tr></thead>
+        <tbody>
+          <tr data-s="胡萝卜种子 枫种"><td>胡萝卜种子</td><td>1 个枫种</td></tr>
+          <tr data-s="夏南瓜种子 树液"><td>夏南瓜种子</td><td>15 个树液</td></tr>
+          <tr data-s="西兰花种子 苔藓"><td>西兰花种子</td><td>5 个苔藓</td></tr>
+          <tr data-s="霜瓜种子 松果"><td>霜瓜种子</td><td>2 个松果</td></tr>
+          <tr data-s="金色谜之盒"><td>金色谜之盒</td><td>3 个谜之盒</td></tr>
+          <tr data-s="桃花心木种子 煤炭"><td>桃花心木种子</td><td>20 个煤炭</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="crop">四种新作物</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>作物</th><th>季节</th><th class="n">生长</th><th class="n">售价</th><th>复收</th><th>种子来源</th></tr></thead>
+        <tbody>
+          <tr data-s="胡萝卜 carrot"><td><b>胡萝卜</b></td><td>春</td><td class="n">3 天</td><td class="n">35g</td><td>否</td><td>矿区箱子、种子点、金色宝箱、谜之盒</td></tr>
+          <tr data-s="夏南瓜 zucchini"><td><b>夏南瓜</b></td><td>夏</td><td class="n">6 天</td><td class="n">45g</td><td>每 3 天</td><td>浣熊商店 15 树液</td></tr>
+          <tr data-s="西兰花 broccoli"><td><b>西兰花</b></td><td>秋</td><td class="n">8 天</td><td class="n">70g</td><td>每 4 天</td><td>浣熊商店 5 苔藓</td></tr>
+          <tr data-s="霜瓜 powdermelon"><td><b>霜瓜</b></td><td>冬</td><td class="n">7 天</td><td class="n">60g</td><td>否</td><td>浣熊商店 2 松果</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>四种作物都不如杨桃、远古水果的纯收益，但胜在季节补充：西兰花是秋季稳定复收，霜瓜是冬季少有的可种作物。建议留一块 5×5 试验田，优先满足图鉴、料理与浣熊兑换。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="machine">新机器与生产链</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>机器</th><th>获取</th><th>产出</th></tr></thead>
+        <tbody>
+          <tr data-s="脱水机 dehydrator"><td><b>脱水机</b></td><td>皮埃尔 10000g；30 木 + 2 黏土 + 1 火石英</td><td>5 个同种同品质原料 → 约 1.5× 总价值</td></tr>
+          <tr data-s="熏鱼机 fish smoker"><td><b>熏鱼机</b></td><td>鱼店 10000g；10 硬木 + 三种果冻各 1</td><td>鱼价值翻倍，保留品质</td></tr>
+          <tr data-s="重型熔炉 heavy furnace"><td><b>重型熔炉</b></td><td>采矿精通</td><td>25 矿石 + 3 煤 → 5–6 锭</td></tr>
+          <tr data-s="蘑菇原木 mushroom log"><td><b>蘑菇原木</b></td><td>采集 4；10 硬木 + 10 苔藓</td><td>每 4 天产 1–5 个蘑菇</td></tr>
+          <tr data-s="鱼饵制造机 bait maker"><td><b>鱼饵制造机</b></td><td>钓鱼 6；3 铁锭 + 3 珊瑚 + 1 海胆</td><td>鱼 → 5–10 个专属鱼饵</td></tr>
+          <tr data-s="大箱子 big chest"><td><b>大箱子</b></td><td>木匠 5000g；120 木 + 2 铜锭</td><td>70 格，可套在普通箱子上</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>布局建议：熏鱼机放在鱼塘与钓点之间；脱水机放果园或蘑菇洞入口；重型熔炉集中放矿场或农场角落；鱼饵制造机靠近常用钓点。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="mystery">谜之盒与饰品</h2>
+      <div class="grid g2">
+        <div class="card" data-s="谜之盒 克林 25g">
+          <h4>谜之盒</h4>
+          <p>钓鱼宝箱、淘金、摇树、怪物与矿洞容器都有概率掉落；找克林花 25g 打开。开过 10 个以上有机会进入金色谜之盒奖池。</p>
+        </div>
+        <div class="card" data-s="金色谜之盒 稀有">
+          <h4>金色谜之盒</h4>
+          <p>稀有池包含金色动物饼干、自动抚摸机、魔法糖冰棍、五彩碎片、宝箱、星星之书等，概率都很低。</p>
+        </div>
+      </div>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>饰品</th><th>效果</th><th>点评</th></tr></thead>
+        <tbody>
+          <tr data-s="蛇怪爪 免疫"><td>蛇怪爪</td><td>免疫大部分负面状态</td><td>高层保命</td></tr>
+          <tr data-s="仙女盒 治疗"><td>仙女盒</td><td>召唤治疗仙女</td><td>长线探索续航</td></tr>
+          <tr data-s="青蛙蛋 吞食"><td>青蛙蛋</td><td>召唤青蛙吞食怪物</td><td>清怪快但损失战利品</td></tr>
+          <tr data-s="金马刺 暴击 加速"><td>金马刺</td><td>暴击后短暂加速</td><td>走位与追击</td></tr>
+          <tr data-s="冰杖 冰冻"><td>冰杖</td><td>命中冰冻敌人 3–4 秒</td><td>控场强</td></tr>
+          <tr data-s="魔法箭袋 自动射击"><td>魔法箭袋</td><td>自动向附近敌人射箭</td><td>补伤害</td></tr>
+          <tr data-s="鹦鹉蛋 金币"><td>鹦鹉蛋</td><td>击杀怪物掉落额外金币</td><td>刷钱向</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>点亮战斗精通后解锁饰品栏，每人同时只能装备一个。铁砧可花 3 铱锭重铸饰品词条，蛇怪爪等少数物品无法重铸。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="life">生活与其他改动</h2>
+      <ul>
+        <li><b>多宠物</b>：初始宠物满心后可再领养，猫狗乌龟同堂；罗宾处可造宠物碗。</li>
+        <li><b>房屋改造</b>：餐厅、阁楼、扩展角房、小隔间四种，多数需要付费，撤销会退款。</li>
+        <li><b>装饰</b>：新增约 280 件家具、41 种地板、24 种壁纸、25 顶帽子。</li>
+        <li><b>农场电脑</b>：可在任意地点查看作物、动物与设备摘要。</li>
+        <li><b>联机</b>：PC 最多 8 人，需要相同构建号。</li>
+        <li><b>大箱子</b>：70 格，可直接套在普通箱子上升级。</li>
+      </ul>
+      <div class="callout">
+        <span class="ct">回坑最短路径</span>
+        <p>先看五项技能是否全满 → 去精通山洞 → 修大树桩开浣熊商店 → 建熏鱼机与脱水机把库存变成现金流 → 再补书籍、饰品与装修。不必为了 1.6 重开档。</p>
+      </div>
+    </section>
+
+    <footer class="pfoot">
+      <a href="姜岛.html"><span class="dir">上一章</span><span class="tt">10 · 姜岛</span></a>
+      <a class="next" href="主线任务.html"><span class="dir">下一章</span><span class="tt">12 · 主线任务</span></a>
+    </footer>
+    <div class="sitefoot">1.6 各小版本（1.6.9–1.6.15）对价格与机制有少量调整，与本文不符时以游戏内为准。</div>
+  </main>
+</div>
+
+<button id="top" aria-label="返回顶部">↑</button>
+<script src="../assets/app.js"></script>
+</body>
+</html>
