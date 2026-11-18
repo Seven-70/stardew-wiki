@@ -11,8 +11,10 @@
     { id: "fest",   num: "09", file: "节日与活动.html",     title: "节日与活动",   desc: "四季节日 · 1.6 新节日" },
     { id: "island", num: "10", file: "姜岛.html",           title: "姜岛",         desc: "解锁 · 金核桃 · 火山地牢" },
     { id: "v16",    num: "11", file: "新版内容.html",       title: "1.6 新内容",   desc: "精通 · 书籍 · 浣熊 · 饰品" },
-    { id: "quest",  num: "12", file: "主线任务.html",       title: "主线任务",     desc: "剧情任务链 · 55 条速查" },
-    { id: "faq",    num: "13", file: "常见问题.html",       title: "常见问题",     desc: "高频疑问集中解答" }
+    { id: "sys",    num: "12", file: "系统与数值.html",     title: "系统与数值",   desc: "生命 · 能量 · 时间 · 技能" },
+    { id: "shop",   num: "13", file: "商店与周历.html",     title: "商店与周历",   desc: "周轮换 · 商人 · 电视" },
+    { id: "quest",  num: "14", file: "主线任务.html",       title: "主线任务",     desc: "剧情任务链 · 55 条速查" },
+    { id: "faq",    num: "15", file: "常见问题.html",       title: "常见问题",     desc: "高频疑问集中解答" }
   ];
 
   var root = document.body.getAttribute("data-root") || "";
