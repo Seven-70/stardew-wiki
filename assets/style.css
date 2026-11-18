@@ -113,7 +113,11 @@ main li::marker{color:#a9b8a7}
 .tb .n{font-variant-numeric:tabular-nums;white-space:nowrap}
 .tb .g{color:var(--green-2);font-weight:600;white-space:nowrap}
 .tb .mut{color:var(--ink-3);font-size:12px}
-.tb-wrap{overflow-x:auto;margin:10px 0 20px}
+.tb .idx{width:44px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.tb .name{width:132px;font-weight:600;color:var(--ink)}
+.tb .reward{width:150px;color:var(--green-2);font-weight:600}
+.tb.tb-quest{min-width:900px}
+.tb-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;margin:10px 0 20px}
 .tb-wrap .tb{margin:0;min-width:560px}
 .tb caption{caption-side:top;text-align:left;font-size:12px;color:var(--ink-3);padding:0 0 6px}
 
@@ -216,10 +220,12 @@ main li::marker{color:#a9b8a7}
 
 /* 响应式 */
 @media (max-width:1040px){
-  .layout{grid-template-columns:1fr;gap:0}
+  .layout{grid-template-columns:1fr;gap:0;max-width:900px;padding:24px 20px 72px}
   aside.side{position:static;max-height:none;display:none;border-bottom:1px solid var(--line);
-    padding-bottom:16px;margin-bottom:22px}
-  aside.side.open{display:block}
+    padding:0 0 16px;margin-bottom:22px}
+  aside.side.open{display:block;max-height:70vh;overflow:auto}
+  aside.side.open .navlist a{padding:9px 10px;font-size:13.5px}
+  aside.side.open #toc a{padding:7px 0 7px 11px;font-size:13px}
   main{max-width:none}
   .menu-btn{display:block}
   .searchbox{max-width:none}
@@ -227,19 +233,43 @@ main li::marker{color:#a9b8a7}
   .g3{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:640px){
-  .topbar-in{padding:0 14px;gap:10px;height:56px}
+  html{scroll-padding-top:68px}
+  body{font-size:14px;-webkit-text-size-adjust:100%}
+  .topbar-in{padding:0 12px;gap:8px;height:54px}
+  .brand{gap:8px}
+  .brand .bt{font-size:14px}
   .brand .bs{display:none}
   .ver{display:none}
   .hit{display:none}
-  .layout{padding:20px 14px 64px}
-  .hero h1{font-size:27px}
-  .phead h1{font-size:23px}
-  main h2{font-size:17px}
-  .entry-grid,.g2,.g3,.qgrid,.pfoot{grid-template-columns:1fr}
-  .pfoot .next{text-align:left}
-  .layout{scroll-padding-top:70px}
+  .searchbox{min-width:0}
+  #q{padding:9px 32px 9px 32px;font-size:13px}
+  .menu-btn{width:36px;height:36px;flex-shrink:0}
+  .layout{padding:18px 13px 64px}
+  .hero h1{font-size:26px}
+  .phead h1{font-size:22px}
+  .phead .desc{font-size:13px}
+  .fact{font-size:11px;padding:3px 9px}
+  main h2{font-size:17px;margin:34px 0 10px}
+  main h3{font-size:15px;margin:22px 0 7px}
+  .lead{font-size:14px;line-height:1.8}
   .tb{font-size:12.5px}
-  .tb th,.tb td{padding:7px 9px}
+  .tb th{white-space:normal}
+  .tb th,.tb td{padding:7px 8px}
+  .tb-wrap .tb{min-width:480px}
+  .tb.tb-quest{min-width:680px}
+  .entry-grid,.g2,.g3,.qgrid,.pfoot{grid-template-columns:1fr}
+  .entry{padding:12px 13px}
+  .card{padding:12px 13px}
+  .callout{padding:11px 12px;font-size:12.5px}
+  .steps li{padding-left:34px;font-size:12.5px}
+  .faq .fa-body{padding:11px 13px 13px 40px}
+  .pfoot .next{text-align:left}
+  #top{right:14px;bottom:14px;width:42px;height:42px}
+}
+@media (max-width:400px){
+  .brand .bt{font-size:13px}
+  .hero h1{font-size:23px}
+  main h2{font-size:16.5px}
 }
 @media print{
   body{background:#fff;font-size:11pt}
