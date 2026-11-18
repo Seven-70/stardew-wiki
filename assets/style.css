@@ -241,6 +241,19 @@ main li::marker{color:#a9b8a7}
   .tb{font-size:12.5px}
   .tb th,.tb td{padding:7px 9px}
 }
+/* 插图 */
+.fig{margin:0 0 26px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:10px}
+.fig img{display:block;width:100%;height:auto;border-radius:6px;background:#fff}
+.fig figcaption{margin-top:9px;font-size:12px;line-height:1.65;color:var(--ink-3);text-align:center}
+.fig figcaption b{color:var(--ink-2);font-weight:600}
+@media (max-width:640px){
+  .fig{padding:7px}
+  .fig figcaption{font-size:11px}
+}
+@media print{
+  .fig{break-inside:avoid}
+}
+
 @media print{
   body{background:#fff;font-size:11pt}
   .topbar,aside.side,#top,.pfoot,.menu-btn,.searchbox{display:none !important}
