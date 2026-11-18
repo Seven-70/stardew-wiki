@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>商店与周历 · 星露谷百科</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body data-page="shop" data-root="../">
+
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="../index.html"><span class="mark">SD</span><span><span class="bt">星露谷百科</span><br /><span class="bs">STARDEW VALLEY</span></span></a>
+    <span class="ver">版本 1.6</span>
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="搜索：周一、旅行货车、科罗布斯、桑迪、电视、酱料女皇…" autocomplete="off" />
+      <button id="clear" type="button" aria-label="清空">×</button>
+    </div>
+    <span class="hit">条目 <b id="hit">0</b></span>
+    <button class="menu-btn" id="menubtn" aria-label="目录">≡</button>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="side">
+    <div class="side-block"><div class="side-title">百科目录</div><nav class="navlist" id="sitenav"></nav></div>
+    <div class="side-block"><div class="side-title">本页</div><nav id="toc"></nav></div>
+  </aside>
+
+  <main>
+    <header class="phead">
+      <div class="crumb"><a href="../index.html">百科</a><span>/</span>商店与周历</div>
+      <div class="pnum">CHAPTER 13</div>
+      <h1>商店与周历</h1>
+      <p class="desc">哪天谁关门、哪天谁卖什么、电视几点播什么——按星期查，不用再记。</p>
+      <div class="facts">
+        <span class="fact">周期 <b>7 天</b></span>
+        <span class="fact">固定商人 <b>4 位</b></span>
+        <span class="fact">电视节目 <b>6 档</b></span>
+        <span class="fact">送礼重置 <b>周日</b></span>
+      </div>
+    </header>
+
+    <section class="blk">
+      <h2 id="week">一周固定轮换</h2>
+      <p class="lead">下表是每天固定会发生的商店 / 商人变化。商品按周循环，不看运气。</p>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>星期</th><th>关闭 / 例外</th><th>当天固定货</th></tr></thead>
+        <tbody>
+          <tr data-s="周一 玛妮 牧场 休息 特别订单 刷新"><td class="n">周一</td><td>玛妮牧场<b>不买卖</b>（仍可进入）</td><td>特别订单板刷新 2 个新任务；桑迪卖 10 个椰子 @400g；科罗布斯卖 50 个史莱姆泥 @10g；沙漠商人 1 万象晶球换 3 干草</td></tr>
+          <tr data-s="周二 罗宾 木匠 玛妮 关闭"><td class="n">周二</td><td>木匠店与玛妮牧场<b>不买卖</b>（仍可进入）</td><td>桑迪卖仙人掌果子 @150g；科罗布斯卖万象晶球 @300g；沙漠商人 5 石头换 1 纤维</td></tr>
+          <tr data-s="周三 皮埃尔 关门 酱料女皇 重播"><td class="n">周三</td><td>皮埃尔杂货店<b>关门</b>（社区中心修好后全年无休）</td><td>电视重播一集《酱料女皇》；桑迪卖 3 个万象晶球 @1,000g；科罗布斯卖随机鱼或磁铁 @200g；沙漠商人 3 海蓝宝石换 1 布料</td></tr>
+          <tr data-s="周四 桑迪 生长激素 离地而居"><td class="n">周四</td><td>—</td><td>桑迪卖高级生长激素 @80g；科罗布斯卖 10 个混合种子 @30g；沙漠商人 3 五彩碎片换 1 魔法糖冰棍；电视《离地而居》</td></tr>
+          <tr data-s="周五 旅行货车 克林特 铁匠 关闭 餐吧"><td class="n">周五</td><td>克林特去餐吧，<b>铁匠铺无法买卖、升级工具、砸晶石</b></td><td>旅行货车 6:00–20:00 在煤矿森林；18:00 后村民聚集餐吧；桑迪卖蜂蜜 @200g；科罗布斯卖铱洒水器 @10,000g；沙漠商人 1 绿宝石换 1 奶酪</td></tr>
+          <tr data-s="周六 威利 鱼店 关门 旅行货车"><td class="n">周六</td><td>不下雨时威利钓一整天，<b>鱼店无法买卖</b>（仍可进入）</td><td>旅行货车 6:00–20:00 在煤矿森林；桑迪卖高级保湿土壤 @200g；科罗布斯卖 5 道随机料理；沙漠商人卖当季野生种子</td></tr>
+          <tr data-s="周日 送礼 重置 可采集 刷新 电视 酱料女皇"><td class="n">周日</td><td>—</td><td><b>每人每周 2 次送礼限制重置</b>；地上未拾取的采集物在一夜之间消失并三倍刷新；电视播《酱料女皇》新食谱（前两年）</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout tip">
+        <span class="ct">周一必做</span>
+        <p>去特别订单板看两个新任务，顺手买椰子和史莱姆泥；周三之前把要卖的作物丢进出货箱，因为皮埃尔那天关门不影响出货箱，但影响补货与买种子。</p>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="merchants">四位固定商人</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>商人</th><th>位置</th><th>特点</th></tr></thead>
+        <tbody>
+          <tr data-s="桑迪 绿洲 沙漠 椰子 仙人掌"><td><b>桑迪</b></td><td>沙漠绿洲</td><td>每天一款固定特价（椰子、仙人掌果子、万象晶球、生长激素、蜂蜜、保湿土壤、冰淇淋）；买沙漠专属种子也在这里</td></tr>
+          <tr data-s="科罗布斯 下水道 史莱姆泥 万象晶球 铱洒水器"><td><b>科罗布斯</b></td><td>下水道</td><td>需要生锈的钥匙；卖史莱姆泥、万象晶球、混合种子、随机鱼 / 磁铁、料理、铱洒水器、蝙蝠翅膀</td></tr>
+          <tr data-s="沙漠商人 五彩碎片 魔法糖冰棍 楼梯 布料 奶酪"><td><b>沙漠商人</b></td><td>沙漠绿洲旁</td><td>以物易物：干草、纤维、布料、魔法糖冰棍、奶酪、当季野生种子、楼梯</td></tr>
+          <tr data-s="姜岛商人 芋头 香蕉 芒果 菠萝 帽子 家具"><td><b>姜岛商人</b></td><td>姜岛</td><td>用芋头、香蕉、芒果、菠萝、蓝铁饼鱼换帽子、墙饰、地毯与家具</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>旅行货车（煤矿森林，周五与周日 6:00–20:00）库存随机，价格浮动，是补最后一件献祭品与稀有种子最常用的渠道；多人模式的结婚戒指配方也只在这里出售。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="tv">电视节目表</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>频道</th><th>播出时间</th><th>作用</th></tr></thead>
+        <tbody>
+          <tr data-s="天气预报 天气 雨水图腾"><td><b>天气预报</b></td><td>每天早上</td><td>预告次日天气；使用雨水图腾后会更新预报；解锁姜岛后追加姜岛天气</td></tr>
+          <tr data-s="算命占卜 运气 维尔维克"><td><b>算命占卜</b></td><td>每天早上</td><td>预言家维尔维克播报当天运势，决定下矿与开箱的日子</td></tr>
+          <tr data-s="离地而居 周一 周四 提示"><td><b>离地而居</b></td><td>周一、周四</td><td>农耕 / 钓鱼 / 采集 / 城镇生活提示，两年一轮播完</td></tr>
+          <tr data-s="酱料女皇 食谱 周日 周三 重播"><td><b>酱料女皇</b></td><td>周日新集、周三重播</td><td>看就能学食谱；从春 7 日起连续两年，之后两年一轮循环</td></tr>
+          <tr data-s="F.I.B.S. 钓鱼信息 潘姆 烈酒 土豆果汁"><td><b>F.I.B.S.</b></td><td>每天</td><td>本季可钓鱼类信息；完成潘姆「烈酒」并触发「土豆果汁」动画后收到信件解锁</td></tr>
+          <tr data-s="彩蛋频道 秋季 26 日 孩子"><td><b>？？？</b></td><td>秋 26</td><td>隐藏频道，只有抛弃过孩子的存档才会出现</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout warn">
+        <span class="ct">别错过周日</span>
+        <p>《酱料女皇》的周日新食谱只在前两年播出，错过就要等两年一轮。周日早上先开电视再出门。</p>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="routine">按周安排的小节奏</h2>
+      <ul>
+        <li><b>周一</b>：看特别订单板 → 买椰子 / 史莱姆泥 → 规划本周献祭缺口。</li>
+        <li><b>周二</b>：罗宾与玛妮休息，别安排建造与买动物；专心种地或下矿。</li>
+        <li><b>周三</b>：皮埃尔关门，提前买好种子与肥料；晚上看《酱料女皇》重播。</li>
+        <li><b>周五</b>：旅行货车 + 铁匠休息，工具升级要提前到周四。</li>
+        <li><b>周六</b>：威利不在鱼店，卖鱼改投出货箱；旅行货车第二次出现。</li>
+        <li><b>周日</b>：送礼次数重置 + 采集物三倍刷新 + 新食谱，是一周里最值得跑一圈的一天。</li>
+      </ul>
+    </section>
+
+    <footer class="pfoot">
+      <a href="系统与数值.html"><span class="dir">上一章</span><span class="tt">12 · 系统与数值</span></a>
+      <a class="next" href="主线任务.html"><span class="dir">下一章</span><span class="tt">14 · 主线任务</span></a>
+    </footer>
+    <div class="sitefoot">商店库存与营业规则在 1.6 中基本稳定；联机与模组环境可能不同。</div>
+  </main>
+</div>
+
+<button id="top" aria-label="返回顶部">↑</button>
+<script src="../assets/app.js"></script>
+</body>
+</html>
