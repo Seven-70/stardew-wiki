@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>入门与基础 · 星露谷百科</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body data-page="start" data-root="../">
+
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="../index.html"><span class="mark">SD</span><span><span class="bt">星露谷百科</span><br /><span class="bs">STARDEW VALLEY</span></span></a>
+    <span class="ver">版本 1.6</span>
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="搜索本页：农场、体力、技能…" autocomplete="off" />
+      <button id="clear" type="button" aria-label="清空">×</button>
+    </div>
+    <span class="hit">条目 <b id="hit">0</b></span>
+    <button class="menu-btn" id="menubtn" aria-label="目录">≡</button>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="side">
+    <div class="side-block"><div class="side-title">百科目录</div><nav class="navlist" id="sitenav"></nav></div>
+    <div class="side-block"><div class="side-title">本页</div><nav id="toc"></nav></div>
+  </aside>
+
+  <main>
+    <header class="phead">
+      <div class="crumb"><a href="../index.html">百科</a><span>/</span>入门与基础</div>
+      <div class="pnum">CHAPTER 01</div>
+      <h1>入门与基础</h1>
+      <p class="desc">选农场、认操作、算体力、看时间——把开局最容易走弯路的四件事一次说清。</p>
+      <div class="facts">
+        <span class="fact">农场 <b>8 种</b></span>
+        <span class="fact">初始体力 <b>270</b></span>
+        <span class="fact">一季 <b>28 天</b></span>
+        <span class="fact">一天 <b>约 14 分钟</b></span>
+      </div>
+    </header>
+
+    <section class="blk">
+      <h2 id="map">八种农场怎么选</h2>
+      <p>农场类型只影响地形、资源与少量专属机制，<b>不影响作物价格和主线进度</b>。第一座农场建议选「标准」或「四角」，地形最规整，洒水器布局最省心。</p>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>农场</th><th>特点</th><th>适合谁</th><th>注意</th></tr></thead>
+        <tbody>
+          <tr data-s="标准农场 standard 耕地 最大"><td><b>标准</b></td><td>耕地面积最大，地形平整，无特殊机制</td><td>第一次玩、想大规模种田</td><td>没有额外资源，纯靠规划</td></tr>
+          <tr data-s="河滩农场 riverland 钓鱼 岛屿"><td><b>河滩</b></td><td>被河流切成若干小岛，水域占比高，钓鱼点多</td><td>钓鱼流、喜欢水景</td><td>耕地被切碎，大型布局困难</td></tr>
+          <tr data-s="森林农场 forest 硬木 觅食"><td><b>森林</b></td><td>西侧固定刷硬木树桩与觅食物，前期硬木来得快</td><td>想早做马厩、小桶</td><td>可耕地略少</td></tr>
+          <tr data-s="山顶农场 hilltop 采矿 矿石"><td><b>山顶</b></td><td>西南角有矿石刷新区，前期铜铁自给</td><td>喜欢下矿、少跑矿洞</td><td>地形高低差大，耕地零碎</td></tr>
+          <tr data-s="荒野农场 wilderness 怪物 夜晚"><td><b>荒野</b></td><td>夜间农场会刷怪，怪物掉落更丰富</td><td>想边种田边刷怪</td><td>前期夜里危险，需围栏</td></tr>
+          <tr data-s="四角农场 four corners 多人 联机"><td><b>四角</b></td><td>分成四块，各带一种小资源，联机一人一角</td><td>2–4 人联机</td><td>单人中规中矩</td></tr>
+          <tr data-s="沙滩农场 beach 洒水器 补给"><td><b>沙滩</b></td><td>沙地不能放洒水器，但海边有补给箱与觅食</td><td>老玩家挑战、休闲流</td><td>只能靠浇水或特定区域耕种</td></tr>
+          <tr data-s="草原农场 meadowlands 蓝草 鸡舍 畜牧 1.6"><td><b>草原</b> <span class="pill">1.6</span></td><td>开局带鸡舍与 2 只鸡，特色蓝草让动物好感翻倍</td><td>畜牧流、想稳定日常收入</td><td>耕地被水塘切碎，不适合极限种田</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout">
+        <span class="ct">难度与矿洞</span>
+        <p>创建存档时还能选「难度」与「矿洞分布」。新手保持默认即可；「危险矿井」与「重新混合的矿洞」是给通关玩家换口味的，不影响成就。</p>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="control">操作与界面</h2>
+      <div class="grid g2">
+        <div class="card" data-s="移动 WASD 工具 使用 蓄力">
+          <h4>移动与使用</h4>
+          <p>WASD 移动，鼠标左键使用工具，按住左键可蓄力（锄头、水壶、鱼竿）。右键使用/食用手持物，滚轮切换物品栏。</p>
+        </div>
+        <div class="card" data-s="快捷键 背包 地图 菜单 表情">
+          <h4>常用快捷键</h4>
+          <p>E 背包、M 地图、Esc 菜单、Tab 切换工具栏行、F4 截图模式。手柄布局基本一致。</p>
+        </div>
+        <div class="card" data-s="体力 能量 睡觉 温泉 昏迷">
+          <h4>体力（能量）</h4>
+          <p>初始上限 270，睡觉回满；温泉泡澡快速恢复。体力归零会昏迷，次日体力减半且可能掉钱。</p>
+        </div>
+        <div class="card" data-s="时间 流速 2点 昏倒">
+          <h4>时间流速</h4>
+          <p>游戏内 10 分钟约等于现实 7 秒，一天（6:00–次日 2:00）约 14 分钟。2:00 未睡会直接昏倒。</p>
+        </div>
+      </div>
+      <p>工具栏只有 12 格，第一次背包升级（2000g）会扩到 24 格，第二次（10000g）扩到 36 格。前期优先升第一次，能明显减少来回跑仓库的次数。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="time">一天与一季的节奏</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>时段</th><th>游戏内时间</th><th>建议</th></tr></thead>
+        <tbody>
+          <tr data-s="清晨 浇水 收获"><td>清晨</td><td>6:00–9:00</td><td>浇水、收获、收动物产品、看邮件</td></tr>
+          <tr data-s="上午 商店 皮埃尔 罗宾"><td>上午</td><td>9:00–12:00</td><td>买东西、交任务、送礼；商店多在 9:00 开门</td></tr>
+          <tr data-s="下午 钓鱼 下矿"><td>下午</td><td>12:00–18:00</td><td>钓鱼、下矿、砍树、跑献祭材料</td></tr>
+          <tr data-s="傍晚 酒吧 餐厅"><td>傍晚</td><td>18:00–22:00</td><td>酒吧买料理、补社交、钓夜鱼</td></tr>
+          <tr data-s="深夜 骷髅洞穴 夜钓"><td>深夜</td><td>22:00–2:00</td><td>骷髅洞穴、夜钓鱼、收尾；注意别昏倒</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>一季 28 天，<b>换季时未收获的作物会枯死</b>（跨季作物如玉米、小麦除外，具体看作物页）。所以每季第 25 天之后就不要再种长周期作物，改种快速回本的种类或干脆休耕整地。</p>
+      <div class="callout warn">
+        <span class="ct">换季必看</span>
+        <p>春季 28 日晚上不要把贵重作物留在地里；夏季 1 日清晨会全部变成枯草。温室和姜岛农场不受季节影响。</p>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="weather">天气与运气</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>天气</th><th>影响</th><th>利用方式</th></tr></thead>
+        <tbody>
+          <tr data-s="晴天 浇水"><td>晴</td><td>正常，需要浇水</td><td>常规农活</td></tr>
+          <tr data-s="雨天 不用浇水 钓鱼 矿洞"><td>雨</td><td>作物自动浇水，钓鱼种类变化</td><td>省下浇水时间去下矿或钓鱼</td></tr>
+          <tr data-s="雷雨 风暴 电池 避雷针"><td>雷雨</td><td>可能劈中作物，避雷针可收集电池</td><td>提前放避雷针攒电池组</td></tr>
+          <tr data-s="雪 冬季"><td>雪</td><td>冬季常态，不影响浇水（冬季一般不种地）</td><td>跑矿洞、姜岛、社交</td></tr>
+          <tr data-s="大风 树枝 硬木"><td>大风</td><td>农场掉落树枝与种子</td><td>顺手捡木材与混合种子</td></tr>
+          <tr data-s="绿雨 苔藓 1.6"><td>绿雨 <span class="pill">1.6</span></td><td>夏季随机一天，全图长苔藓、树木变异</td><td>当天专门收苔藓与纤维，别安排别的</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>每天电视里的「运气」影响矿洞出梯子、钓鱼宝箱、晶洞内容等随机结果。运气好就下矿，运气差就做确定性的农活和社交。幸运增益可由料理（如幸运午餐）、幸运戒指、祝福雕像叠加。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="skill">五项技能与职业选择</h2>
+      <p>耕种、采矿、采集、钓鱼、战斗各 10 级，5 级与 10 级各选一次职业。<b>10 级后经验不会浪费</b>，1.6 起会转化为精通点（见 <a href="新版内容.html#mastery">精通系统</a>）。</p>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>技能</th><th>5 级</th><th>10 级</th><th>推荐</th></tr></thead>
+        <tbody>
+          <tr data-s="耕种 牧场主 农耕人 工匠 农业学家"><td><b>耕种</b></td><td>牧场主（畜产品 +20%）／农耕人（作物 +10%）</td><td>工匠（工匠品 +40%）／农业学家（生长快 10%）</td><td class="g">农耕人 → 工匠</td></tr>
+          <tr data-s="采矿 矿工 地质学家 铁匠 勘探者 宝石专家"><td><b>采矿</b></td><td>矿工（矿石 +1）／地质学家（宝石可能成对）</td><td>铁匠（金属锭 +50%）／勘探者（煤翻倍）</td><td class="g">矿工 → 铁匠</td></tr>
+          <tr data-s="采集 伐木工 收集者 植物学家 追踪者"><td><b>采集</b></td><td>伐木工（木材 +25%）／收集者（采集物可能双倍）</td><td>植物学家（采集物必为最高品质）／追踪者（显示位置）</td><td class="g">收集者 → 植物学家</td></tr>
+          <tr data-s="钓鱼 渔夫 捕蟹人 垂钓者 海盗 诱饵大师"><td><b>钓鱼</b></td><td>渔夫（鱼价 +25%）／捕蟹人（蟹笼成本降低）</td><td>垂钓者（鱼价 +50%）／海盗（宝箱概率翻倍）</td><td class="g">渔夫 → 垂钓者</td></tr>
+          <tr data-s="战斗 战士 侦察兵 蛮力 防御者 致命"><td><b>战斗</b></td><td>战士（伤害 +10%）／侦察兵（暴击 +50%）</td><td>蛮力（伤害 +15%）／防御者（生命 +25）</td><td class="g">战士 → 蛮力（稳妥）</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>职业一旦选定，只能在「下水道」找狗雕像花 10000g 重置当天技能选择。前期不用纠结，选错也能改。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="star">星之果实与体力上限</h2>
+      <p>星之果实（Stardrop）每个永久 +34 体力上限，全游戏共 <b>7 个</b>：</p>
+      <ul>
+        <li>矿井第 100 层的宝箱</li>
+        <li>星露谷展览会（秋 16）用 2000 星币兑换</li>
+        <li>下水道科罗布斯处 20000g 购买</li>
+        <li>与任意村民结婚后获得</li>
+        <li>钓鱼技能全图鉴（钓鱼大师成就）</li>
+        <li>博物馆捐献满 60 件</li>
+        <li>秘密森林的隐藏区域（需斧头砍开树桩）</li>
+      </ul>
+      <p>集齐后体力上限为 <b>508</b>，配合料理与温泉基本不会因为体力卡进度。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="spring">第一年春怎么走</h2>
+      <p class="lead">把春季 28 天分成五个阶段，按顺序推进就不会乱。以下节奏的前提是<b>没有使用加速、每天浇水</b>。</p>
+      <div class="grid g2">
+        <div class="card" data-s="春初 清地 播种 箱子 鱼竿 草莓预算">
+          <div class="k">春 1–4</div>
+          <h4>种田、赚钱、留物一起做</h4>
+          <p>清一小块地，种下作物并每天浇水，做箱子存放材料；春 2 日起领鱼竿，靠钓鱼与采集补收入。作物与采集物先各留一份献祭用，买种、升级都要给草莓预算留余地。</p>
+        </div>
+        <div class="card" data-s="春5 下矿 电梯 社区中心 法师塔 献祭">
+          <div class="k">春 5 起</div>
+          <h4>下矿与献祭逐步推进</h4>
+          <p>下矿每 5 层开一站电梯，矿石与煤都留好；晴天从巴士站进镇触发社区中心剧情，调查卷轴后次日读信去法师塔。献祭按解锁进度持续交，雨天留意所需鱼类。</p>
+        </div>
+        <div class="card" data-s="春13 复活节 草莓 寻蛋 回款">
+          <div class="k">春 13</div>
+          <h4>按能力买草莓</h4>
+          <p>12 日晚前安排好回款，复活节<b>先买种子再开始寻蛋</b>，晚上回农场播种浇水。无加速且每天浇水时，13 日种下的草莓可在 21 日、25 日收获。别把现金全部花光。</p>
+        </div>
+        <div class="card" data-s="春中下旬 美洲大树莓 播种截止 花椰菜 青豆">
+          <div class="k">春 15–24</div>
+          <h4>补食物，盯住播种期限</h4>
+          <p>15–18 日顺路采美洲大树莓作补给；无加速时花椰菜最晚 16 日、青豆 18 日、土豆与甘蓝菜 22 日、防风草 24 日种下，再晚就赶不上春季成熟。</p>
+        </div>
+        <div class="card" data-s="春末 收获 献祭库存 夏种钱 草莓第二轮">
+          <div class="k">春 25–28</div>
+          <h4>收获、留物、留夏种钱</h4>
+          <p>25 日收第二轮草莓，28 日收完能成熟的春季作物；清点献祭库存，备好食物与材料，并留出夏 1 日买种子的钱——草莓等普通春季作物入夏会枯死。</p>
+        </div>
+      </div>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>日期</th><th>要做的事</th></tr></thead>
+        <tbody>
+          <tr data-s="春1-4 清地 播种 箱子"><td class="n">春 1–4</td><td>清一小块地、播种并每天浇水；做箱子存材料，作物与采集物留献祭份。</td></tr>
+          <tr data-s="春2 鱼竿 钓鱼 采集"><td class="n">春 2</td><td>领取鱼竿，钓鱼加采集补收入。</td></tr>
+          <tr data-s="春5 下矿 电梯 社区中心"><td class="n">春 5 起</td><td>下矿每 5 层开电梯；晴天从巴士站进镇触发社区中心剧情。</td></tr>
+          <tr data-s="春12 回款 草莓 现金"><td class="n">春 12 晚</td><td>安排好回款，为复活节买草莓种子留现金。</td></tr>
+          <tr data-s="春13 复活节 草莓 寻蛋"><td class="n">春 13</td><td>复活节先买种子再寻蛋；晚上回农场播种浇水（21 日、25 日可收）。</td></tr>
+          <tr data-s="春15-18 美洲大树莓"><td class="n">春 15–18</td><td>顺路采美洲大树莓作补给。</td></tr>
+          <tr data-s="春25 草莓 第二轮"><td class="n">春 25</td><td>收第二轮草莓。</td></tr>
+          <tr data-s="春28 清点 献祭 夏种钱"><td class="n">春 28</td><td>收完能成熟的春季作物，清点献祭库存，留夏 1 日买种钱。</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>作物</th><th>最晚播种</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr data-s="花椰菜 播种截止 春16"><td><b>花椰菜</b></td><td class="n">春 16</td><td class="mut">再晚就赶不上春季成熟</td></tr>
+          <tr data-s="青豆 播种截止 春18"><td><b>青豆</b></td><td class="n">春 18</td><td class="mut">多次收获，注意留出浇水时间</td></tr>
+          <tr data-s="土豆 播种截止 春22"><td><b>土豆</b></td><td class="n">春 22</td><td class="mut">与甘蓝菜同一天截止</td></tr>
+          <tr data-s="甘蓝菜 播种截止 春22"><td><b>甘蓝菜</b></td><td class="n">春 22</td><td class="mut">春季常见的高价作物</td></tr>
+          <tr data-s="防风草 播种截止 春24"><td><b>防风草</b></td><td class="n">春 24</td><td class="mut">春季作物中最晚的截止日</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="mistake">新手最容易犯的 8 个错</h2>
+      <ol class="steps">
+        <li><b>前两周把钱全买种子</b>先留 2000g 升背包，否则每天来回跑仓库会浪费大量时间。</li>
+        <li><b>忽视春季 13 日的草莓</b>复活节摊位卖草莓种子，是春季最高性价比的复收作物，错过要等一年。</li>
+        <li><b>把树全砍光</b>留几棵橡树/枫树挂采集器，橡树树脂是小桶的核心材料。</li>
+        <li><b>不做稻草人</b>乌鸦会吃掉作物，一块 5×5 的地至少放一个。</li>
+        <li><b>换季前种长周期作物</b>第 25 天后种 12 天的花椰菜，注定烂在地里。</li>
+        <li><b>体力见底还硬撑</b>昏迷会掉钱且次日体力减半，宁可早睡。</li>
+        <li><b>不触发社区中心</b>春 5 日后雨天去社区中心，否则献祭线会一直卡着。</li>
+        <li><b>不升级工具</b>铜水壶能一次浇 3 格，铁锄能一次挖 3 格，节省的时间远超升级费用。</li>
+      </ol>
+    </section>
+
+    <footer class="pfoot">
+      <a href="../index.html"><span class="dir">返回</span><span class="tt">百科首页</span></a>
+      <a class="next" href="种植与作物.html"><span class="dir">下一章</span><span class="tt">02 · 种植与作物</span></a>
+    </footer>
+    <div class="sitefoot">数值以 1.6 版为准；不同平台可能存在细微差异，以游戏内显示为最终标准。</div>
+  </main>
+</div>
+
+<button id="top" aria-label="返回顶部">↑</button>
+<script src="../assets/app.js"></script>
+</body>
+</html>

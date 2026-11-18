@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>村民与好感 · 星露谷百科</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body data-page="npc" data-root="../">
+
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="../index.html"><span class="mark">SD</span><span><span class="bt">星露谷百科</span><br /><span class="bs">STARDEW VALLEY</span></span></a>
+    <span class="ver">版本 1.6</span>
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="搜索村民：海莉、塞巴斯蒂安、生日…" autocomplete="off" />
+      <button id="clear" type="button" aria-label="清空">×</button>
+    </div>
+    <span class="hit">条目 <b id="hit">0</b></span>
+    <button class="menu-btn" id="menubtn" aria-label="目录">≡</button>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="side">
+    <div class="side-block"><div class="side-title">百科目录</div><nav class="navlist" id="sitenav"></nav></div>
+    <div class="side-block"><div class="side-title">本页</div><nav id="toc"></nav></div>
+  </aside>
+
+  <main>
+    <header class="phead">
+      <div class="crumb"><a href="../index.html">百科</a><span>/</span>村民与好感</div>
+      <div class="pnum">CHAPTER 06</div>
+      <h1>村民与好感</h1>
+      <p class="desc">好感度怎么算、生日表、送礼规则、结婚条件与婚后收益。</p>
+      <div class="facts">
+        <span class="fact">村民 <b>33 位</b></span>
+        <span class="fact">1 心 <b>250 点</b></span>
+        <span class="fact">每周 <b>2 份礼物</b></span>
+        <span class="fact">生日 <b>×8</b></span>
+      </div>
+    </header>
+
+    <section class="blk">
+      <h2 id="rule">好感度规则</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>行为</th><th class="n">好感变化</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr data-s="每天 对话 聊天 20"><td>每天对话</td><td class="n">+20</td><td>一天一次，漏掉会开始衰减</td></tr>
+          <tr data-s="最爱 礼物 80 loved"><td>送出「最爱」</td><td class="n">+80</td><td>品质越高额外加成</td></tr>
+          <tr data-s="喜欢 liked 45"><td>送出「喜欢」</td><td class="n">+45</td><td>—</td></tr>
+          <tr data-s="一般 neutral 20"><td>送出「一般」</td><td class="n">+20</td><td>—</td></tr>
+          <tr data-s="不喜欢 disliked -20"><td>送出「不喜欢」</td><td class="n">−20</td><td>—</td></tr>
+          <tr data-s="讨厌 hated -40"><td>送出「讨厌」</td><td class="n">−40</td><td>垃圾、鱼饵等</td></tr>
+          <tr data-s="生日 8倍"><td>生日礼物</td><td class="n">×8</td><td>不占用每周 2 次限额</td></tr>
+          <tr data-s="忽视 衰减 掉好感"><td>长期不对话</td><td class="n">递减</td><td>已认识但当天没说话会缓慢掉好感</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p><b>1 心 = 250 点</b>，普通村民上限 10 心（2500 点）；可恋爱对象在送花束后上限提升到 14 心（3500 点）。每周最多送 2 份礼物（周日重置），生日那份不计入。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="gift">送礼怎么最快</h2>
+      <ol class="steps">
+        <li><b>先认识所有人</b>春季前两周把镇上跑一遍，认识 28 人可完成任务并拿好感。</li>
+        <li><b>每人每周 2 份「最爱」</b>攒一批通用最爱（见下），优先给想攻略的对象。</li>
+        <li><b>生日必送</b>生日礼物 ×8，一份最爱等于平时 8 份，是全游戏最高效的好感来源。</li>
+        <li><b>每天对话</b>路过就聊一句，+20 且防止衰减，成本为零。</li>
+        <li><b>节日互动</b>花舞节跳舞、冬日星盛宴互赠礼物都会额外加好感。</li>
+      </ol>
+      <div class="callout tip">
+        <span class="ct">通用最爱</span>
+        <p>五彩碎片、珍珠、黄金南瓜、魔法糖冰棍、兔脚——这五样几乎人人都爱，留几份专门应付生日和任务。部分村民有例外，送之前不确定就存档。</p>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="birthday">生日表</h2>
+      <p>生日当天送「最爱」是冲好感的核心手段。下表按季节排列，方便每月初做计划。</p>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>春</th><th>村民</th><th>夏</th><th>村民</th><th>秋</th><th>村民</th><th>冬</th><th>村民</th></tr></thead>
+        <tbody>
+          <tr data-s="春04 肯特 夏04 贾斯 秋02 潘妮 冬03 莱纳斯"><td class="n">04</td><td>肯特</td><td class="n">04</td><td>贾斯</td><td class="n">02</td><td>潘妮</td><td class="n">03</td><td>莱纳斯</td></tr>
+          <tr data-s="春07 刘易斯 夏08 格斯 秋05 艾利欧特 冬07 卡洛琳"><td class="n">07</td><td>刘易斯</td><td class="n">08</td><td>格斯</td><td class="n">05</td><td>艾利欧特</td><td class="n">07</td><td>卡洛琳</td></tr>
+          <tr data-s="春10 文森特 夏10 玛鲁 秋11 乔迪 冬10 塞巴斯蒂安"><td class="n">10</td><td>文森特</td><td class="n">10</td><td>玛鲁</td><td class="n">11</td><td>乔迪</td><td class="n">10</td><td>塞巴斯蒂安</td></tr>
+          <tr data-s="春14 海莉 夏13 亚历克斯 秋13 阿比盖尔 冬14 哈维"><td class="n">14</td><td>海莉</td><td class="n">13</td><td>亚历克斯</td><td class="n">13</td><td>阿比盖尔</td><td class="n">14</td><td>哈维</td></tr>
+          <tr data-s="春18 帕姆 夏17 山姆 秋15 桑迪 冬17 法师"><td class="n">18</td><td>帕姆</td><td class="n">17</td><td>山姆</td><td class="n">15</td><td>桑迪</td><td class="n">17</td><td>法师</td></tr>
+          <tr data-s="春20 谢恩 夏19 德米特里厄斯 秋18 玛妮 冬20 艾芙琳"><td class="n">20</td><td>谢恩</td><td class="n">19</td><td>德米特里厄斯</td><td class="n">18</td><td>玛妮</td><td class="n">20</td><td>艾芙琳</td></tr>
+          <tr data-s="春26 皮埃尔 夏22 矮人 秋21 罗宾 冬23 莉亚"><td class="n">26</td><td>皮埃尔</td><td class="n">22</td><td>矮人</td><td class="n">21</td><td>罗宾</td><td class="n">23</td><td>莉亚</td></tr>
+          <tr data-s="春27 艾米丽 夏24 威利 秋24 乔治 冬26 克林特"><td class="n">27</td><td>艾米丽</td><td class="n">24</td><td>威利</td><td class="n">24</td><td>乔治</td><td class="n">26</td><td>克林特</td></tr>
+          <tr data-s="夏28 雷欧"><td class="n">—</td><td class="mut">—</td><td class="n">28</td><td>雷欧</td><td class="n">—</td><td class="mut">—</td><td class="n">—</td><td class="mut">—</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="small">科罗布斯、冈瑟、马龙、齐先生等特殊 NPC 不在常规生日表内；具体以游戏内社交菜单为准。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="love">12 位可攻略对象的代表喜好</h2>
+      <p>只列每人的标志性最爱，方便应急送礼；完整列表在游戏内社交菜单的「礼物」页可以逐人查看。</p>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>村民</th><th>生日</th><th>代表性最爱</th></tr></thead>
+        <tbody>
+          <tr data-s="阿比盖尔 Abigail 紫水晶 南瓜"><td><b>阿比盖尔</b></td><td class="n">秋 13</td><td>紫水晶、南瓜、巧克力蛋糕、河豚</td></tr>
+          <tr data-s="亚历克斯 Alex 早餐 鲑鱼"><td><b>亚历克斯</b></td><td class="n">夏 13</td><td>完整早餐、鲑鱼晚餐、烤宽面条</td></tr>
+          <tr data-s="艾利欧特 Elliott 龙虾 石榴 蟹黄糕"><td><b>艾利欧特</b></td><td class="n">秋 05</td><td>龙虾、石榴、蟹黄糕、鱿鱼墨</td></tr>
+          <tr data-s="艾米丽 Emily 布料 宝石 羊毛"><td><b>艾米丽</b></td><td class="n">春 27</td><td>布料、海蓝宝石、红宝石、羊毛</td></tr>
+          <tr data-s="海莉 Haley 粉红蛋糕 向日葵 椰子"><td><b>海莉</b></td><td class="n">春 14</td><td>粉红蛋糕、水果沙拉、向日葵、椰子</td></tr>
+          <tr data-s="哈维 Harvey 咖啡 泡菜 松露 酒"><td><b>哈维</b></td><td class="n">冬 14</td><td>咖啡、泡菜、松露、葡萄酒</td></tr>
+          <tr data-s="莉亚 Leah 沙拉 山羊奶酪 松露 酒"><td><b>莉亚</b></td><td class="n">冬 23</td><td>沙拉、山羊奶酪、松露、葡萄酒</td></tr>
+          <tr data-s="玛鲁 Maru 钻石 金锭 铱锭 电池"><td><b>玛鲁</b></td><td class="n">夏 10</td><td>钻石、金锭、铱锭、电池组</td></tr>
+          <tr data-s="潘妮 Penny 钻石 绿宝石 甜瓜 罂粟"><td><b>潘妮</b></td><td class="n">秋 02</td><td>钻石、绿宝石、甜瓜、罂粟</td></tr>
+          <tr data-s="山姆 Sam 仙人掌果 枫糖浆 披萨"><td><b>山姆</b></td><td class="n">夏 17</td><td>仙人掌果、枫糖浆、披萨、虎眼石</td></tr>
+          <tr data-s="塞巴斯蒂安 Sebastian 冻泪 黑曜石 南瓜汤"><td><b>塞巴斯蒂安</b></td><td class="n">冬 10</td><td>冻泪、黑曜石、南瓜汤、虚空蛋</td></tr>
+          <tr data-s="谢恩 Shane 啤酒 辣椒 披萨 爆米花"><td><b>谢恩</b></td><td class="n">春 20</td><td>啤酒、辣椒、披萨、爆米花</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout">
+        <span class="ct">礼物品质有加成</span>
+        <p>银星、金星、铱星的礼物会额外加好感，所以「高品质的喜欢」有时比「普通品质的最爱」差不了太多。铱星最爱是最优解。</p>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="marry">结婚流程与婚后</h2>
+      <ol class="steps">
+        <li><b>刷到 8 心</b>与心仪对象好感达到 8 心。</li>
+        <li><b>买花束</b>皮埃尔处购买花束（200g），送给对方开始交往，好感上限提升到 14 心。</li>
+        <li><b>刷到 10 心</b>继续送礼与对话，达到 10 心。</li>
+        <li><b>买美人鱼吊坠</b>雨天的海滩找老水手，花 5000g 购买。</li>
+        <li><b>求婚</b>把吊坠送给对象，三天后举行婚礼。</li>
+      </ol>
+      <p>婚后配偶会：偶尔浇水、喂动物、修围栏、做早餐、送你礼物；好感达到 14 心后可购买配偶肖像。结婚还会获得一个<b>星之果实</b>（体力上限 +34）。</p>
+      <ul>
+        <li><b>离婚</b>：刘易斯家（市长庄园）花 50000g 办理，离婚后对方好感清零。</li>
+        <li><b>室友</b>：不结婚也可以邀请科罗布斯同住，条件是好感 10 心并完成相关任务。</li>
+        <li><b>多配偶</b>：原版不支持，需要模组。</li>
+      </ul>
+    </section>
+
+    <section class="blk">
+      <h2 id="npc">其他重要 NPC</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>NPC</th><th>位置</th><th>作用</th></tr></thead>
+        <tbody>
+          <tr data-s="皮埃尔 Pierre 种子 背包"><td><b>皮埃尔</b></td><td>镇上杂货店</td><td>买种子、肥料、背包升级</td></tr>
+          <tr data-s="罗宾 Robin 建造 升级"><td><b>罗宾</b></td><td>山上木匠店</td><td>建造建筑、房屋升级、家具</td></tr>
+          <tr data-s="克林特 Clint 熔炉 工具"><td><b>克林特</b></td><td>镇上铁匠铺</td><td>升级工具、打开晶洞</td></tr>
+          <tr data-s="威利 Willy 鱼竿 鱼饵"><td><b>威利</b></td><td>海滩鱼店</td><td>鱼竿、鱼饵、鱼塘相关</td></tr>
+          <tr data-s="玛妮 Marnie 动物 鸡"><td><b>玛妮</b></td><td>农场南边牧场</td><td>购买动物、干草</td></tr>
+          <tr data-s="冈瑟 Gunther 博物馆 捐献"><td><b>冈瑟</b></td><td>镇博物馆</td><td>捐献古物与矿石</td></tr>
+          <tr data-s="法师 Wizard 祝尼魔 建筑"><td><b>法师</b></td><td>镇西法师塔</td><td>祝尼魔文字、祝尼魔小屋</td></tr>
+          <tr data-s="科罗布斯 Krobus 下水道"><td><b>科罗布斯</b></td><td>下水道</td><td>商店、室友、星之果实</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="rules-extra">容易漏掉的送礼规则</h2>
+      <ul>
+        <li><b>每周 2 次</b>（每天最多 1 次）；如果本周已经送满 2 次，<b>生日当天仍可再送一次</b>。</li>
+        <li>生日送礼效果 <b>×8</b>；冬 25 冬日星盛宴当天送礼效果 <b>×5</b>——同一天既生日又过节，只按更高倍率算。</li>
+        <li>礼物<b>品质越高</b>，加的好感越多；送对方最爱的铱星物品收益最大。</li>
+        <li>普通村民好感上限 <b>10 心</b>；配偶或室友上限提升到 <b>14 心</b>。</li>
+        <li>节日现场与村民交谈同样加好感；节日当天的动物会被自动喂食，不用赶回去。</li>
+        <li>送垃圾、送对方讨厌的东西会倒扣，宁可当天不送也别乱送。</li>
+      </ul>
+    </section>
+
+    <footer class="pfoot">
+      <a href="社区中心与献祭.html"><span class="dir">上一章</span><span class="tt">05 · 社区中心与献祭</span></a>
+      <a class="next" href="建造与农场.html"><span class="dir">下一章</span><span class="tt">07 · 建造与农场</span></a>
+    </footer>
+    <div class="sitefoot">喜好与生日以 1.6 版为准；个别 NPC 的礼物反应在不同版本可能有微调。</div>
+  </main>
+</div>
+
+<button id="top" aria-label="返回顶部">↑</button>
+<script src="../assets/app.js"></script>
+</body>
+</html>

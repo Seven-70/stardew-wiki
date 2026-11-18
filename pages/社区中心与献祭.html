@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>社区中心与献祭 · 星露谷百科</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body data-page="cc" data-root="../">
+
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="../index.html"><span class="mark">SD</span><span><span class="bt">星露谷百科</span><br /><span class="bs">STARDEW VALLEY</span></span></a>
+    <span class="ver">版本 1.6</span>
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="搜索：温室、金库、收集包…" autocomplete="off" />
+      <button id="clear" type="button" aria-label="清空">×</button>
+    </div>
+    <span class="hit">条目 <b id="hit">0</b></span>
+    <button class="menu-btn" id="menubtn" aria-label="目录">≡</button>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="side">
+    <div class="side-block"><div class="side-title">百科目录</div><nav class="navlist" id="sitenav"></nav></div>
+    <div class="side-block"><div class="side-title">本页</div><nav id="toc"></nav></div>
+  </aside>
+
+  <main>
+    <header class="phead">
+      <div class="crumb"><a href="../index.html">百科</a><span>/</span>社区中心与献祭</div>
+      <div class="pnum">CHAPTER 05</div>
+      <h1>社区中心与献祭</h1>
+      <p class="desc">六大房间、收集包与全部奖励，以及社区中心与 Joja 两条路线的取舍。</p>
+      <div class="facts">
+        <span class="fact">房间 <b>6 个</b></span>
+        <span class="fact">核心奖励 <b>温室</b></span>
+        <span class="fact">金库 <b>42500g</b></span>
+        <span class="fact">Joja <b>约 14 万</b></span>
+      </div>
+    </header>
+
+    <section class="blk">
+      <h2 id="start">怎么开始</h2>
+      <ol class="steps">
+        <li><b>春季 5 日之后</b>的任意<b>雨天</b>，从镇子进入社区中心，会看到祝尼魔并触发剧情。</li>
+        <li>第二天收到法师的信，去法师塔（镇子西侧）对话，学会阅读「祝尼魔文字」。</li>
+        <li>之后社区中心内每个房间的金色卷轴都可阅读，收集包正式开放。</li>
+        <li>把要求的物品放进对应房间的收集包，集满一个包会立刻发放该包的小奖励。</li>
+      </ol>
+      <div class="callout warn">
+        <span class="ct">别急着捐</span>
+        <p>献祭物品一旦放入就无法取回。贵重物品（如五彩碎片、恐龙蛋）先确认是否还有别的用途，尤其是第一次玩。</p>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="rooms">六大房间与奖励</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>房间</th><th>主要收集包</th><th>房间奖励</th><th>优先级</th></tr></thead>
+        <tbody>
+          <tr data-s="工艺室 craft room 桥梁 采石场"><td><b>工艺室</b></td><td>春季作物、夏季作物、秋季作物、建筑师（木材/石头/硬木）、异域采集</td><td>修复通往<b>采石场</b>的桥梁</td><td>中</td></tr>
+          <tr data-s="茶水间 pantry 温室"><td><b>茶水间</b></td><td>春季作物、夏季作物、秋季作物、品质作物、动物产品、工匠品</td><td>修复<b>温室</b></td><td class="g">最高</td></tr>
+          <tr data-s="鱼缸 fish tank 淘金盘"><td><b>鱼缸</b></td><td>河鱼、湖鱼、海鱼、夜钓、蟹笼、特色鱼</td><td>获得<b>淘金盘</b>（可淘金）</td><td>中</td></tr>
+          <tr data-s="锅炉房 boiler room 矿车"><td><b>锅炉房</b></td><td>铁匠（铜/铁/金锭）、地质学家（石英/地晶/冻泪/火石英）、冒险家（怪物掉落）</td><td>修复<b>矿车</b>快速旅行</td><td class="g">高</td></tr>
+          <tr data-s="布告栏 bulletin board 好感"><td><b>布告栏</b></td><td>厨师、染料、田野研究、饲料、魔法师</td><td>全体村民<b>好感提升</b></td><td>中</td></tr>
+          <tr data-s="金库 vault 巴士 沙漠"><td><b>金库</b></td><td>2500 / 5000 / 10000 / 25000 金，共 42500g</td><td>修复<b>巴士</b>，可去沙漠</td><td class="g">高</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>六个房间全部完成后，社区中心修复，祝尼魔回归，并解锁后续内容（电影院购买、祝尼魔小屋等）。每个小收集包本身也会给一点即时代价不高的奖励，不必为了小奖励改变种植计划。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="detail">各房间要点</h2>
+      <h3>茶水间：优先冲温室</h3>
+      <p>茶水间包含春、夏、秋三组作物与一组「品质作物」（金星防风草、金星甜瓜、金星南瓜、金星玉米），再加动物产品与工匠品。作物部分可以靠当季种植解决，<b>品质作物需要提前用高级肥料</b>，否则要等第二年。</p>
+      <ul>
+        <li>春季就把金星防风草种出来，别等到秋天补。</li>
+        <li>金星甜瓜（夏）、金星南瓜（秋）、金星玉米（夏秋）都要留。</li>
+        <li>动物产品需要大壶牛奶、大鸡蛋等，鸡舍/畜棚要提前升级。</li>
+        <li>工匠品包括奶酪、蛋黄酱、蜂蜜、果酱、布料等，提前把设备做出来。</li>
+      </ul>
+      <h3>金库：花钱换巴士</h3>
+      <p>金库不打折，四次捐款共 42500g。修复巴士后可以去沙漠：骷髅洞穴、沙漠节、仙人掌果、沙鱼。越早通车，后期节奏越顺。</p>
+      <h3>锅炉房：矿车网络</h3>
+      <p>铁匠包需要铜锭、铁锭、金锭各一；地质学家包需要四种矿物；冒险家包需要怪物掉落。修复矿车后，镇子、矿洞、采石场、巴士站之间可以快速移动。</p>
+      <h3>鱼缸：淘金盘</h3>
+      <p>鱼缸的物品受季节与天气限制，是最容易拖进度的一间。建议提前列清单，按季节钓。完成后获得淘金盘，可在河边淘金，是古物与矿石的额外来源。</p>
+      <h3>布告栏与工艺室</h3>
+      <p>布告栏的「厨师包」需要多道料理，提前攒食材；「魔法师包」需要虚空精华等怪物掉落。工艺室的异域采集包需要椰子、仙人掌果（沙漠）、洞穴胡萝卜、红蘑菇、紫蘑菇（矿洞/蘑菇洞）。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="miss">错过季节怎么办</h2>
+      <ul>
+        <li><b>作物类</b>：只能等明年同季。可用温室提前种（温室不受季节限制），或查旅行货车是否有货。</li>
+        <li><b>鱼类</b>：按季节/天气/时段重钓，鱼缸不要求品质。</li>
+        <li><b>采集类</b>：多数全年可补，冬季注意「冬季种子」相关产物。</li>
+        <li><b>怪物掉落</b>：随时可刷，冒险家包最容易补。</li>
+      </ul>
+      <div class="callout tip">
+        <span class="ct">省一年时间</span>
+        <p>温室修好后，把献祭缺的季节作物种在温室里，可以无视季节补齐。这也是「先冲温室」的最大理由。</p>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="plan">完成节奏建议</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>阶段</th><th>目标</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr data-s="第一年 春 夏 秋 温室"><td>第一年春夏秋</td><td>冲茶水间 + 金库</td><td>温室是最强奖励，巴士打开沙漠</td></tr>
+          <tr data-s="第一年冬 锅炉房 矿车"><td>第一年冬</td><td>补锅炉房与鱼缸</td><td>冬季农活少，适合刷矿与钓鱼</td></tr>
+          <tr data-s="第二年 布告栏 工艺室 完成"><td>第二年</td><td>补布告栏与工艺室</td><td>剩下的多为采集与料理，按清单补</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>熟练玩家通常在第一年秋冬完成社区中心；第一次玩拖到第二年很正常。<b>不必因为错过某个作物重开档</b>，旅行货车与温室都能补救。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="joja">社区中心 vs Joja 路线</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>对比</th><th>社区中心</th><th>Joja</th></tr></thead>
+        <tbody>
+          <tr data-s="启动 费用 会员"><td>启动</td><td>免费，靠收集</td><td>5000g 买会员</td></tr>
+          <tr data-s="总花费 金钱"><td>总花费</td><td>金库 42500g + 材料时间</td><td>约 14 万 g（含会员）</td></tr>
+          <tr data-s="速度 快慢"><td>速度</td><td>受季节限制，通常一年以上</td><td>有钱就能立刻买项目，最快</td></tr>
+          <tr data-s="奖励 温室 巴士 矿车"><td>奖励</td><td>同样的温室、巴士、矿车、淘金盘</td><td>同样的功能，逐项购买</td></tr>
+          <tr data-s="结局 祝尼魔 电影院"><td>结局差异</td><td>修复社区中心，祝尼魔回归</td><td>社区中心变成仓库，可买电影院</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Joja 路线适合「不想被季节卡、只想快点拿温室」的玩家；社区中心路线更有收集乐趣，也不花钱。两条路线的功能奖励基本一致，<b>不影响完美度</b>，选自己喜欢的即可。</p>
+      <div class="callout">
+        <span class="ct">还能反悔吗</span>
+        <p>买了 Joja 会员并完成任一项目后，社区中心路线即告关闭，无法再改回。做决定前想清楚。</p>
+      </div>
+    </section>
+
+    <footer class="pfoot">
+      <a href="矿洞与战斗.html"><span class="dir">上一章</span><span class="tt">04 · 矿洞与战斗</span></a>
+      <a class="next" href="村民与好感.html"><span class="dir">下一章</span><span class="tt">06 · 村民与好感</span></a>
+    </footer>
+    <div class="sitefoot">收集包的具体物品清单以游戏内卷轴为准；本页列出结构与关键物品，便于规划。</div>
+  </main>
+</div>
+
+<button id="top" aria-label="返回顶部">↑</button>
+<script src="../assets/app.js"></script>
+</body>
+</html>
