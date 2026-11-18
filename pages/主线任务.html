@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>主线任务 · 星露谷百科</title>
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body data-page="quest" data-root="../">
+
+<div class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="../index.html"><span class="mark">SD</span><span><span class="bt">星露谷百科</span><br /><span class="bs">STARDEW VALLEY</span></span></a>
+    <span class="ver">版本 1.6</span>
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="搜索：任务、献祭、齐先生…" autocomplete="off" />
+      <button id="clear" type="button" aria-label="清空">×</button>
+    </div>
+    <span class="hit">条目 <b id="hit">0</b></span>
+    <button class="menu-btn" id="menubtn" aria-label="目录">≡</button>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="side">
+    <div class="side-block"><div class="side-title">百科目录</div><nav class="navlist" id="sitenav"></nav></div>
+    <div class="side-block"><div class="side-title">本页</div><nav id="toc"></nav></div>
+  </aside>
+
+  <main>
+    <header class="phead">
+      <div class="crumb"><a href="../index.html">百科</a><span>/</span>主线任务</div>
+      <div class="pnum">CHAPTER 12</div>
+      <h1>主线任务</h1>
+      <p class="desc">剧情任务链的顺序与触发条件，以及 55 条任务的完整文字速查入口。</p>
+      <div class="facts">
+        <span class="fact">完整条目 <b>55 条</b></span>
+        <span class="fact">分类 <b>6 类</b></span>
+        <span class="fact">剧情任务 <b>无时限</b></span>
+        <span class="fact">求助任务 <b>2 天</b></span>
+      </div>
+    </header>
+
+    <section class="blk">
+      <h2 id="type">三种任务别搞混</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>类型</th><th>来源</th><th>时限</th><th>奖励</th></tr></thead>
+        <tbody>
+          <tr data-s="剧情任务 主线 quest"><td><b>剧情任务</b></td><td>信件、剧情触发</td><td>无时限</td><td>金钱、解锁功能、好感</td></tr>
+          <tr data-s="求助任务 布告栏 help wanted"><td><b>求助任务</b></td><td>皮埃尔店门口的布告栏</td><td>2 天</td><td>金钱与少量好感</td></tr>
+          <tr data-s="特殊订单 special order 齐先生"><td><b>特殊订单</b></td><td>镇民家门口的订单板、齐先生</td><td>通常 7 天</td><td>稀有配方、物品、齐钻</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>剧情任务不会过期，可以随时推进；求助任务过期就消失，但会再刷新。特殊订单难度更高，奖励也更独特。</p>
+    </section>
+
+    <section class="blk">
+      <h2 id="chain">主线任务链</h2>
+      <ol class="steps">
+        <li><b>开始</b>打开农舍里的包裹 → 播种并收割防风草。奖励 100g。</li>
+        <li><b>介绍</b>认识 28 位村民，奖励与所有人的好感。</li>
+        <li><b>养殖动物 / 进阶 / 交友指南</b>建鸡舍、做稻草人、送出一份礼物，三条支线可并行。</li>
+        <li><b>入门</b>矿井 5 层后收到信，击杀 10 只史莱姆，获准进入探险家公会。</li>
+        <li><b>开始铸造 → 打铁</b>拿到铜矿后克林特给熔炉配方，做出铜锭。</li>
+        <li><b>考古发现</b>向博物馆捐献一件古物或矿石。</li>
+        <li><b>社区中心线</b>雨天进入社区中心 → 法师塔学祝尼魔文字 → 开启六大房间献祭。</li>
+        <li><b>矿井线</b>逐步深入，120 层拿到骷髅钥匙，开启沙漠骷髅洞穴。</li>
+        <li><b>秘密纸条线</b>解锁秘密纸条后，齐先生的相关任务逐步展开。</li>
+        <li><b>姜岛线</b>完成社区中心后修船，进入 1.5 的大地图。</li>
+        <li><b>1.6 浣熊线</b>修好大树桩，完成浣熊请求，解锁新作物种子。</li>
+      </ol>
+    </section>
+
+    <section class="blk">
+      <h2 id="reward">高价值任务奖励</h2>
+      <div class="tb-wrap">
+      <table class="tb">
+        <thead><tr><th>任务</th><th>奖励</th><th>价值</th></tr></thead>
+        <tbody>
+          <tr data-s="秘文纸条 铱蛇奶 生命"><td>秘文纸条</td><td>铱蛇奶，生命上限永久 +25</td><td>永久增益</td></tr>
+          <tr data-s="奇怪纸条 熊的知识"><td>奇怪纸条</td><td>熊的知识</td><td>采集相关永久增益</td></tr>
+          <tr data-s="介绍 28位 好感"><td>介绍</td><td>与所有已认识村民加好感</td><td>社交起步</td></tr>
+          <tr data-s="入门 探险家公会"><td>入门</td><td>解锁探险家公会</td><td>买武器、戒指、接怪物目标</td></tr>
+          <tr data-s="社区中心 温室 巴士"><td>社区中心</td><td>温室、巴士、矿车、淘金盘</td><td>最核心的功能解锁</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="full">55 条任务完整速查</h2>
+      <p>完整版按「秘密纸条任务 / 主线剧情任务 / 支线任务 / 姜岛任务 / 齐先生任务 / 其他」分类，支持关键词搜索与分类筛选，含任务内容、触发条件、解决方法与奖励。</p>
+      <p><a href="主线任务-完整版.html"><b>打开《星露谷物语 · 主线剧情任务（文字版）》→</b></a></p>
+      <div class="callout">
+        <span class="ct">怎么用</span>
+        <p>在完整版页面用顶部搜索框输入任务名、NPC 或物品名即可过滤；按 Ctrl + K 可快速聚焦搜索。该页也可直接打印。</p>
+      </div>
+    </section>
+
+    <section class="blk">
+      <h2 id="order">特殊订单怎么接</h2>
+      <ul>
+        <li>镇民家门口的<b>订单板</b>每周刷新，完成可得金钱、配方或物品。</li>
+        <li>姜岛齐先生房间每周一个高难度挑战，奖励齐钻。</li>
+        <li>部分订单需要特定好感或前置任务，没看到就先把对应村民的好感刷上去。</li>
+        <li>订单通常限时 7 天，接之前确认材料与时间够不够。</li>
+      </ul>
+    </section>
+
+    <footer class="pfoot">
+      <a href="新版内容.html"><span class="dir">上一章</span><span class="tt">11 · 1.6 新内容</span></a>
+      <a class="next" href="常见问题.html"><span class="dir">下一章</span><span class="tt">13 · 常见问题</span></a>
+    </footer>
+    <div class="sitefoot">任务文本来自玩家整理的 55 条图表转写；触发条件以游戏内实际显示为准。</div>
+  </main>
+</div>
+
+<button id="top" aria-label="返回顶部">↑</button>
+<script src="../assets/app.js"></script>
+</body>
+</html>
